@@ -593,25 +593,7 @@ const Events: React.FC = () => {
             <div className="h-1 w-24 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-full animate-tech-underline"></div>
           </div>
           
-          {/* Calendar Integration */}
-        <div className="mt-16 bg-gray-900/50 backdrop-blur-xl rounded-2xl p-6 border border-cyan-400/20">
-          <h3 className="text-2xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-            Subscribe to Our Calendar
-          </h3>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-gray-300 flex-1">
-              Never miss an event! Subscribe to our calendar and get automatic updates for all upcoming events.
-            </p>
-            <div className="flex gap-3">
-              <button className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/30">
-                <i className="fab fa-google mr-2"></i>Google Calendar
-              </button>
-              <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30">
-                <i className="fas fa-calendar-alt mr-2"></i>iCalendar
-              </button>
-            </div>
-          </div>
-        </div>
+          
 
         {/* Event Slideshow */}
         <div className="mb-20 animate-fade-in-up">
@@ -688,6 +670,26 @@ const Events: React.FC = () => {
             {/* Slide counter */}
             <div className="absolute top-6 right-6 bg-black/60 text-white px-3 py-1 rounded-full text-sm backdrop-blur-sm">
               {currentSlide + 1} / {eventImages.length}
+            </div>
+          </div>
+        </div>
+
+        {/* Calendar Integration */}
+        <div className="mt-16 bg-gray-900/50 backdrop-blur-xl rounded-2xl p-6 border border-cyan-400/20">
+          <h3 className="text-2xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+            Subscribe to Our Calendar
+          </h3>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-gray-300 flex-1">
+              Never miss an event! Subscribe to our calendar and get automatic updates for all upcoming events.
+            </p>
+            <div className="flex gap-3">
+              <button className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/30">
+                <i className="fab fa-google mr-2"></i>Google Calendar
+              </button>
+              <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30">
+                <i className="fas fa-calendar-alt mr-2"></i>iCalendar
+              </button>
             </div>
           </div>
         </div>
